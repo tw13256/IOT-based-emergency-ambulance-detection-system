@@ -5,11 +5,13 @@ During large-scale accidents, a single device can classify and assess injuries f
 
 Here are the example images showcasing the functionalities of our intelligent steering wheel system:
 
-<p float="left">
-  <img src="https://github.com/hsh0615/picture/blob/main/%E5%9C%96%E7%89%878.png" alt="Improper Hand Placement" width="270" />
-  <img src="https://github.com/hsh0615/picture/blob/main/%E5%9C%96%E7%89%877.png" alt="Driver Fatigue Detection" width="270" /> 
-  <img src="https://github.com/hsh0615/picture/blob/main/%E5%9C%96%E7%89%879.png" alt="Drunk Driving Detection" width="270" />
-</p>
+
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <img src="https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E6%89%8B%E9%83%A8.jpg" alt="Hand" width="150" style="margin: 0 10px;">
+  <img src="https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E7%AE%AD%E9%A0%AD.jpeg" alt="Driver Fatigue Detection" width="200" style="margin: 0 10px;">
+  <img src="https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E7%B6%A0%E8%89%B2.PNG" alt="Drunk Driving Detection" width="120" style="margin: 0 10px;">
+</div>
 
 ## HW/SW Setup
 ### 【Hardware Requirements】
@@ -23,27 +25,37 @@ Here are the example images showcasing the functionalities of our intelligent st
 - **      PCA9672		**(Expansion I/O		  ,Connections to ST7735 DC, Pushbutton, Thumb Switch)
 - **     RBW6100-RA		**(BT 5.1				  ,Transmit vital signs and location to on-site disaster centers)
 - **     GY-NEO6MV2     **(GPS Model			  ,Getting the location)
-![hardware](https://github.com/hsh0615/picture/blob/main/%E5%9C%96%E7%89%875.png)
+![hardware](https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E6%9E%B6%E6%A7%8B.PNG)
 ### 【Software】
-- **PPG SQI Model**
-![image](https://github.com/hsh0615/picture/blob/main/SQI-good-bad.png)
-![image](https://github.com/hsh0615/picture/blob/main/accuracy-sqi.png)
-- **Yawn detection Model**
-![image](https://github.com/hsh0615/picture/blob/main/Yawn.png)
-![image](https://github.com/hsh0615/picture/blob/main/accuracy-yawn.png)
+- **Blood Pressure Estimation Algorithm**
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <img src="https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E8%A1%80%E5%A3%933.PNG" alt="bp1" width="450" style="margin: 0 10px;">
+  <img src="https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E7%AE%AD%E9%A0%AD.jpeg" alt="bp2" width="180" style="margin: 0 10px;">
+  <img src="https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E8%A1%80%E5%A3%93.PNG" alt="bp3" width="370" style="margin: 0 10px;">
+</div>
+
+<div style="display: flex; justify-content: center; align-items: flex-start;">
+  <img src="https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E8%A1%80%E5%A3%932.PNG" alt="bp1" width="550" style="margin: 0 10px;">
+  <img src="https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92.PNG" alt="bp2" width="450" style="margin: 0 10px;">
+ 
+</div>
+
+- **Heart Rate Algorithm**
+ 
+![image](https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E5%BF%83%E8%B7%B31.PNG)
+![image](https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E5%BF%83%E8%B7%B32.PNG)
+
+- **Blood Oxygen(SPO2) Algorithm**
+ 
+![image](https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E8%A1%80%E6%B0%A71.PNG)
+![image](https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/%E8%A1%80%E6%B0%A72.PNG)
 
 ## User manual
-### 【Setup on Car】
-![硬體](https://github.com/hsh0615/picture/blob/main/%E7%A1%AC%E9%AB%94.png) ![汽車](https://github.com/hsh0615/picture/blob/main/car-resize.png)
-### 1. Hands Off the Wheel Testing
-![image](https://github.com/hsh0615/picture/blob/main/hand-off.png)
-### 2. Driver Yawn Testing
-![image](https://github.com/hsh0615/picture/blob/main/Driver-Yawn.png)
-### 3. Driver Drunkenness
-![image](https://github.com/hsh0615/picture/blob/main/Drunk.png)
-### 4. Cloud Testing
-- When the Safety Steering Wheel detects potential signs of drunk driving, it will trigger the cloud testing process.
-![Hardware](https://github.com/hsh0615/picture/blob/main/python-cloud-gps.png)
+### 1. Press the button to change the emergency level of START.
+![硬體](https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/step1.PNG)
+### 2.Toggle the switch to lock the emergency level and put 2 fingers on the sensor to get Physiological signals.
+### The signals will be updated every 5 seconds.
+![image](https://github.com/tw13256/IOT-based-emergency-ambulance-detection-system/blob/main/step2.jpg)
 
 ### Youtube link
 - https://www.youtube.com/watch?v=9_kwLSGJuDw
